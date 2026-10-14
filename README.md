@@ -73,7 +73,7 @@ PNG files have a transparent background. Logo and promise PNGs are 1000 px wide,
 
 ### Icons
 
-The official iconography in two colours, SVG only: Cobalt Blue in `icons/cobalt/` (for Cream backgrounds) and Sky Blue in `icons/sky/` (for Midnight Blue backgrounds). Each icon has the same name in both folders, for example https://sqli-spain-internal.github.io/sqli-brand-assets/icons/cobalt/arrow-right.svg
+The official iconography in two colours, SVG and 120 px PNG (use the PNG in emails): Cobalt Blue in `icons/cobalt/` (for Cream backgrounds) and Sky Blue in `icons/sky/` (for Midnight Blue backgrounds). Each icon has the same name in both folders, for example https://sqli-spain-internal.github.io/sqli-brand-assets/icons/cobalt/arrow-right.svg
 
 Available icons: `accessibility`, `arrow-down`, `arrow-fill-down`, `arrow-fill-left`, `arrow-fill-ne`, `arrow-fill-nw`, `arrow-fill-right`, `arrow-fill-se`, `arrow-fill-sw`, `arrow-fill-up`, `arrow-left`, `arrow-ne`, `arrow-nw`, `arrow-right`, `arrow-se`, `arrow-sw`, `arrow-up`, `burger`, `burger2`, `chevron-down`, `chevron-left`, `chevron-right`, `chevron-small-down`, `chevron-small-left`, `chevron-small-right`, `chevron-small-up`, `chevron-up`, `close`, `disability`, `download-fill`, `download`, `facebook`, `instagram`, `linked-in`, `magnify`, `magnify2`, `minus`, `pinterest`, `plus`, `tick`, `tiktok`, `x`, `youtube`.
 

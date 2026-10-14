@@ -92,7 +92,7 @@ for title, folder, d in GROUPS:
         r.append(f"| `{stem}` | {', '.join(d[stem])} | {BASE}{folder}/{stem}.svg | {BASE}{folder}/{stem}.png |")
     r.append("")
 r.append("### Icons\n")
-r.append(f"The official iconography in two colours, SVG only: Cobalt Blue in `icons/cobalt/` (for Cream backgrounds) and Sky Blue in `icons/sky/` (for Midnight Blue backgrounds). "
+r.append(f"The official iconography in two colours, SVG and 120 px PNG (use the PNG in emails): Cobalt Blue in `icons/cobalt/` (for Cream backgrounds) and Sky Blue in `icons/sky/` (for Midnight Blue backgrounds). "
          f"Each icon has the same name in both folders, for example {BASE}icons/cobalt/arrow-right.svg\n")
 r.append("Available icons: " + ", ".join(f"`{i[:-4]}`" for i in icons) + ".\n")
 r.append("### Fonts\n")
@@ -169,7 +169,7 @@ pre{{background:var(--midnight);color:var(--cream);padding:16px;overflow-x:auto;
 <main>
 <header><img src="logo/sqli-logo-midnight.svg" alt="sqli"></header>
 <h1>Brand assets</h1>
-<p>Logos, ascenders, the promise, icons and fonts with stable public URLs, for email signatures, presentations and web pages. Each file is available as SVG and as a transparent PNG (icons as SVG only). Use the PNG in email signatures. The usage rules come from the SQLI Brand Guidelines v1.1.</p>
+<p>Logos, ascenders, the promise, icons and fonts with stable public URLs, for email signatures, presentations and web pages. Each file is available as SVG and as a transparent PNG. Use the PNG in email signatures. The usage rules come from the SQLI Brand Guidelines v1.1.</p>
 <p>The SQLI logo, the promise and the ascenders are trademarks of SQLI. These files are published for SQLI communications and for authorised partners. Use them as they are, without changing colour, shape or proportions.</p>
 <p>Repository: <a href="https://github.com/SQLI-Spain-Internal/sqli-brand-assets">github.com/SQLI-Spain-Internal/sqli-brand-assets</a></p>
 <h2>Colours</h2>
