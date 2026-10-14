@@ -25,8 +25,16 @@ for colour in ("sky", "cobalt"):
         pix = page.get_pixmap(matrix=fitz.Matrix(480 / page.rect.width, 480 / page.rect.width), alpha=True)
         im = Image.frombytes("RGBA", (pix.width, pix.height), pix.samples)
         im = im.crop(im.split()[-1].getbbox())
-        side = max(im.size)
+        # Optical centre: LinkedIn's "in" reads lower than its box because of the small dot on the
+        # i, so it is centred on the body of the n (its right half) and the dot rises above.
+        if name == "linked-in":
+            body = im.crop((im.width // 2, 0, im.width, im.height)).split()[-1].getbbox()
+            cy = (body[1] + body[3]) / 2
+        else:
+            cy = im.height / 2
+        half = max(cy, im.height - cy)
+        side = int(max(im.width, 2 * half) + 0.5)
         canvas = Image.new("RGBA", (side, side), (0, 0, 0, 0))
-        canvas.paste(im, ((side - im.width) // 2, (side - im.height) // 2))
+        canvas.paste(im, ((side - im.width) // 2, int(side / 2 - cy)))
         canvas.resize((120, 120), Image.LANCZOS).save(out / f"{name}.png")
         print(f"icons/social/{colour}/{name}.png")
