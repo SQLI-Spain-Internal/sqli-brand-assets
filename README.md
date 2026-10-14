@@ -1,8 +1,12 @@
 # SQLI brand assets
 
-Basic SQLI brand files with stable public URLs, for email signatures, websites and Claude Design pages. Every file is served by GitHub Pages at the URLs below. A preview page lists everything: https://sqli-spain-internal.github.io/sqli-brand-assets/
+Basic SQLI brand files with stable public URLs, for email signatures, presentations and web pages. Every file is served by GitHub Pages at the URLs below. A preview page lists everything: https://sqli-spain-internal.github.io/sqli-brand-assets/
 
 Use the GitHub Pages URLs, not raw.githubusercontent.com. The raw host serves SVG as plain text, so SVG files do not display in an `<img>` tag from there.
+
+## Use of these files
+
+The SQLI logo, the promise and the ascenders are trademarks of SQLI. This repository has no open source licence. The files are published for SQLI communications and for partners SQLI has authorised to use its brand. Use them as they are, without changing colour, shape or proportions. For anything not covered here, contact SQLI marketing.
 
 ## Brand colours
 
@@ -75,7 +79,7 @@ Available icons: `accessibility`, `arrow-down`, `arrow-fill-down`, `arrow-fill-l
 
 ### Fonts
 
-TWK Everett in the three brand weights and their italics. There is no bold weight in the brand.
+TWK Everett Light and Regular, each with its italic, and Medium. There is no bold weight in the brand.
 
 | File | Weight | Style |
 |---|---|---|
@@ -129,11 +133,12 @@ body {
 
 ## Files built from the official ones
 
-Most files are copied unchanged from the official SQLI asset folders and only renamed. These are not in the official folders and were built from official material:
+Most files are copied unchanged from the official SQLI asset set and only renamed. These were built from official material:
 
-- `logo/sqli-logo-cobalt.svg` is the official Midnight Blue logo recoloured to Cobalt Blue (approved on p13 and p27, not in the official Logos folder).
-- `promise/elevate-digitally-inline-ascenders-midnight-cream.svg` is the promise from the 2025 SQLI ELEVATE PowerPoint theme with Cream ascenders, for Sky Blue backgrounds (approved on p15, not in the official Firmas folder).
-- `icons/cobalt/download-fill.svg and icons/sky/download-fill.svg` is the filled-circle download icon shown on p9, rebuilt from parts of the official icon set because the official Iconography folder does not include it.
+- `logo/sqli-logo-cobalt.svg` is the official Midnight Blue logo recoloured to Cobalt Blue. The brand guidelines approve a Cobalt Blue logo on Cream, but the official asset set does not include the file.
+- `promise/elevate-digitally-inline-ascenders-midnight-cream.svg` is the official promise with Cream ascenders, for Sky Blue backgrounds. The brand guidelines approve this combination, but the official asset set does not include the file.
+- `icons/cobalt/download-fill.svg` is the filled-circle download icon shown in the brand guidelines, rebuilt from parts of the official icon set.
+- `icons/sky/download-fill.svg` is the same icon in Sky Blue.
 - Every PNG is rendered from the SVG with the same name.
 
-Source: SQLI Brand Guidelines v1.1
+The usage rules come from the SQLI Brand Guidelines v1.1, an internal document. SQLI staff can get it from marketing.

@@ -26,8 +26,10 @@ ignored by git.
 
 ## Rules for any change
 
-- Official files only. Never redraw, recolour, stretch or "improve" an asset. The only files not taken
-  from the official folders are listed in `BUILT` in `tools/build_docs.py`: keep that list complete.
+- Official files only. Never redraw, recolour, stretch or "improve" an asset. The only exceptions are
+  the files listed in `BUILT` in `tools/build_docs.py`: keep that list complete.
+- Public text (README, index.html) must not depend on internal material: no brand book page numbers,
+  internal folder names or links readers cannot open. Page numbers belong in code comments.
 - File names: lowercase, hyphens, no spaces, `<asset>-<colour>[-variant]`. Never rename a published
   file: people link to these URLs. Add a new name instead.
 - Every SVG in `logo/`, `ascenders/` and `promise/` has a PNG next to it, and an entry in the tables of

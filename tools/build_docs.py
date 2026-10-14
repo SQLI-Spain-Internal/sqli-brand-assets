@@ -44,10 +44,13 @@ PROMISE = {
     "elevate-digitally-wrapped-ascenders-midnight": ["Cream"],
 }
 GROUPS = [("Logo", "logo", LOGO), ("Ascenders", "ascenders", ASC), ("Promise", "promise", PROMISE)]
+# Files not taken unchanged from the official asset set. Brand book pages, for maintainers:
+# sqli-logo-cobalt p13 and p27, midnight-cream promise p15, download-fill p9.
 BUILT = {
-    "logo/sqli-logo-cobalt.svg": "the official Midnight Blue logo recoloured to Cobalt Blue (approved on p13 and p27, not in the official Logos folder)",
-    "promise/elevate-digitally-inline-ascenders-midnight-cream.svg": "the promise from the 2025 SQLI ELEVATE PowerPoint theme with Cream ascenders, for Sky Blue backgrounds (approved on p15, not in the official Firmas folder)",
-    "icons/cobalt/download-fill.svg and icons/sky/download-fill.svg": "the filled-circle download icon shown on p9, rebuilt from parts of the official icon set because the official Iconography folder does not include it",
+    "logo/sqli-logo-cobalt.svg": "the official Midnight Blue logo recoloured to Cobalt Blue. The brand guidelines approve a Cobalt Blue logo on Cream, but the official asset set does not include the file",
+    "promise/elevate-digitally-inline-ascenders-midnight-cream.svg": "the official promise with Cream ascenders, for Sky Blue backgrounds. The brand guidelines approve this combination, but the official asset set does not include the file",
+    "icons/cobalt/download-fill.svg": "the filled-circle download icon shown in the brand guidelines, rebuilt from parts of the official icon set",
+    "icons/sky/download-fill.svg": "the same icon in Sky Blue",
 }
 FONTS = [("light", 300, "normal"), ("light-italic", 300, "italic"), ("regular", 400, "normal"),
          ("regular-italic", 400, "italic"), ("medium", 500, "normal")]
@@ -62,9 +65,13 @@ assert icons == sorted(p.name for p in (ROOT / "icons/sky").glob("*.svg"))
 # ---------- README ----------
 r = []
 r.append("# SQLI brand assets\n")
-r.append("Basic SQLI brand files with stable public URLs, for email signatures, websites and Claude Design pages. "
+r.append("Basic SQLI brand files with stable public URLs, for email signatures, presentations and web pages. "
          "Every file is served by GitHub Pages at the URLs below. A preview page lists everything: " + BASE + "\n")
 r.append("Use the GitHub Pages URLs, not raw.githubusercontent.com. The raw host serves SVG as plain text, so SVG files do not display in an `<img>` tag from there.\n")
+r.append("## Use of these files\n")
+r.append("The SQLI logo, the promise and the ascenders are trademarks of SQLI. This repository has no open source licence. "
+         "The files are published for SQLI communications and for partners SQLI has authorised to use its brand. "
+         "Use them as they are, without changing colour, shape or proportions. For anything not covered here, contact SQLI marketing.\n")
 r.append("## Brand colours\n")
 r.append("| Colour | Hex |\n|---|---|")
 for n, h in (("Cream", CREAM), ("Midnight Blue", MIDNIGHT), ("Sky Blue", SKY), ("Cobalt Blue", COBALT)):
@@ -89,7 +96,7 @@ r.append(f"The official iconography in two colours, SVG only: Cobalt Blue in `ic
          f"Each icon has the same name in both folders, for example {BASE}icons/cobalt/arrow-right.svg\n")
 r.append("Available icons: " + ", ".join(f"`{i[:-4]}`" for i in icons) + ".\n")
 r.append("### Fonts\n")
-r.append("TWK Everett in the three brand weights and their italics. There is no bold weight in the brand.\n")
+r.append("TWK Everett Light and Regular, each with its italic, and Medium. There is no bold weight in the brand.\n")
 r.append("| File | Weight | Style |\n|---|---|---|")
 for n, w, s in FONTS:
     r.append(f"| {BASE}fonts/twk-everett-{n}.ttf | {w} | {s} |")
@@ -101,11 +108,11 @@ for n, w, s in FONTS:
              f"  font-weight: {w};\n  font-style: {s};\n  font-display: swap;\n}}")
 r.append("\nbody {\n  font-family: \"TWK Everett\", Arial, sans-serif;\n}\n```\n")
 r.append("## Files built from the official ones\n")
-r.append("Most files are copied unchanged from the official SQLI asset folders and only renamed. These are not in the official folders and were built from official material:\n")
+r.append("Most files are copied unchanged from the official SQLI asset set and only renamed. These were built from official material:\n")
 for k, v in BUILT.items():
     r.append(f"- `{k}` is {v}.")
 r.append("- Every PNG is rendered from the SVG with the same name.\n")
-r.append("Source: SQLI Brand Guidelines v1.1\n")
+r.append("The usage rules come from the SQLI Brand Guidelines v1.1, an internal document. SQLI staff can get it from marketing.\n")
 (ROOT / "README.md").write_text("\n".join(r), encoding="utf-8")
 
 # ---------- index.html ----------
@@ -162,7 +169,8 @@ pre{{background:var(--midnight);color:var(--cream);padding:16px;overflow-x:auto;
 <main>
 <header><img src="logo/sqli-logo-midnight.svg" alt="sqli"></header>
 <h1>Brand assets</h1>
-<p>Logos, ascenders, the promise, icons and fonts with stable public URLs, for email signatures, websites and Claude Design pages. Each file is available as SVG and as a transparent PNG (icons as SVG only). Use the PNG in email signatures. Source: SQLI Brand Guidelines v1.1.</p>
+<p>Logos, ascenders, the promise, icons and fonts with stable public URLs, for email signatures, presentations and web pages. Each file is available as SVG and as a transparent PNG (icons as SVG only). Use the PNG in email signatures. The usage rules come from the SQLI Brand Guidelines v1.1.</p>
+<p>The SQLI logo, the promise and the ascenders are trademarks of SQLI. These files are published for SQLI communications and for authorised partners. Use them as they are, without changing colour, shape or proportions.</p>
 <p>Repository: <a href="https://github.com/SQLI-Spain-Internal/sqli-brand-assets">github.com/SQLI-Spain-Internal/sqli-brand-assets</a></p>
 <h2>Colours</h2>
 <div class="swatches">
