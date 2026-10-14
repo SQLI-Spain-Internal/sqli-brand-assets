@@ -18,7 +18,7 @@ ignored by git.
 | `logo/` | The logotype in Midnight, Cobalt, Cream and Sky, plus safe-zone versions. SVG and PNG. |
 | `ascenders/` | The two ascender bars in the four brand colours. SVG and PNG. |
 | `promise/` | "Elevate. Digitally" on one or two lines, with and without ascenders. SVG and PNG. |
-| `icons/cobalt/`, `icons/sky/` | The official icon set, same file names in both folders. SVG, and PNG at 120 px for emails. |
+| `icons/cobalt/`, `icons/sky/` | The official icon set, same file names in both folders. SVG, and PNG at 120 px. `icons/social/` holds the social icons cropped and centred for emails. |
 | `fonts/` | TWK Everett Light, Light Italic, Regular, Regular Italic, Medium. |
 | `tools/` | `build_png.py` renders the PNGs, `build_docs.py` writes README.md and index.html. |
 
